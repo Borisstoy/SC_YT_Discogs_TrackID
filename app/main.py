@@ -4,6 +4,10 @@ from flask import request
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+@app.route("/") 
+def home_view(): 
+    return "<h1>Hello Hello !</h1>"
+    
 @app.route('/search', methods=['GET'])
 def search():
     mix = request.args.get('mix')
