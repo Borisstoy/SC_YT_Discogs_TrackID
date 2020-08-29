@@ -11,5 +11,3 @@ def search():
     artist_searches = request.args.get('artist_searches')
     podcasts_page = request.args.get('podcasts_page')
     return f'<h1>{artist} API base route</p>'
-
-app.run()
